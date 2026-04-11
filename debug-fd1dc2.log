@@ -1,0 +1,13 @@
+{"sessionId": "fd1dc2", "hypothesisId": "H3", "location": "test.py:startup", "message": "script entered", "data": {"file": "D:\\cursor COIDE\\test.py"}, "timestamp": 1775914410919, "runId": "pre-fix"}
+{"sessionId": "fd1dc2", "hypothesisId": "H2", "location": "test.py:num", "message": "secret number", "data": {"num": 7}, "timestamp": 1775914410920, "runId": "pre-fix"}
+{"sessionId": "fd1dc2", "hypothesisId": "H1", "location": "test.py:read_int_1", "message": "ValueError retry", "data": {"error": "invalid literal for int() with base 10: 'abc'"}, "timestamp": 1775914410920, "runId": "post-fix"}
+{"sessionId": "fd1dc2", "hypothesisId": "H1", "location": "test.py:read_int_1", "message": "parsed ok", "data": {"value": 1}, "timestamp": 1775914410921, "runId": "post-fix"}
+{"sessionId": "fd1dc2", "hypothesisId": "H2", "location": "test.py:guess1", "message": "guess1 after read", "data": {"guess": 1, "num": 7}, "timestamp": 1775914410922, "runId": "post-fix"}
+{"sessionId": "fd1dc2", "hypothesisId": "H2", "location": "test.py:branch", "message": "first_wrong", "data": {"guess_gt": false}, "timestamp": 1775914410922, "runId": "post-fix"}
+{"sessionId": "fd1dc2", "hypothesisId": "H1", "location": "test.py:read_int_2", "message": "parsed ok", "data": {"value": 2}, "timestamp": 1775914410923, "runId": "post-fix"}
+{"sessionId": "fd1dc2", "hypothesisId": "H2", "location": "test.py:guess2", "message": "guess2 after read", "data": {"guess": 2, "num": 7}, "timestamp": 1775914410923, "runId": "post-fix"}
+{"sessionId": "fd1dc2", "hypothesisId": "H2", "location": "test.py:branch", "message": "second_wrong", "data": {"guess_gt": false}, "timestamp": 1775914410924, "runId": "post-fix"}
+{"sessionId": "fd1dc2", "hypothesisId": "H1", "location": "test.py:read_int_3", "message": "parsed ok", "data": {"value": 3}, "timestamp": 1775914410924, "runId": "post-fix"}
+{"sessionId": "fd1dc2", "hypothesisId": "H2", "location": "test.py:guess3", "message": "guess3 after read", "data": {"guess": 3, "num": 7}, "timestamp": 1775914410925, "runId": "post-fix"}
+{"sessionId": "fd1dc2", "hypothesisId": "H2", "location": "test.py:branch", "message": "third_wrong", "data": {"guess_gt": false}, "timestamp": 1775914410925, "runId": "post-fix"}
+{"sessionId": "fd1dc2", "hypothesisId": "H4", "location": "test.py:end", "message": "script finished normally", "data": {}, "timestamp": 1775914410926, "runId": "post-fix"}
