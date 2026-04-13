@@ -111,6 +111,7 @@ for i in range(1,10):
         print(f"{i}*{j}={i*j}\t",end='')
     print("")
     """
+"""
 import random
 money=10000
 for i  in range(1,21):
@@ -128,4 +129,66 @@ for i  in range(1,21):
         continue
         if i==20:
             break
-    
+"""
+"""
+def hesuan() :
+    print("我是黑马程序员")
+    print("请在七十二小时内出试你的核算")
+
+hesuan()
+"""
+"""
+num=True
+money= 5000000
+def select():
+    print("=========查询余额========")
+    print(f"{name},你好，你目前剩余:{money}元")
+def cunqian():
+    i = int(input("请输入你要存放的金额："))
+    print("=========存款========")
+    print(f"{name},你好，你存款{i}元成功")
+    print(f"{name},你好，你目前剩余:{money+i}元")
+def quqian():
+    i=int(input("请输入你要取出的金额："))
+    print("=========取款========")
+    print(f"{name},你好，你取款{i}元成功")
+    print(f"{name},你好，你目前剩余:{money-i}元")
+def out():
+    global num 
+    num= False
+    return num
+def func(x):
+    if x==1:
+        select()
+        return money
+    elif x==2:
+        cunqian()
+    elif x==3:
+        quqian()
+    elif x==4:
+        out()
+def word():
+    print("=========主菜单========")
+    global name
+    name = input("请输入姓名：")
+    print(f"{name},你好.欢迎来到黑马银行ATM,请选择操作:")
+    print("查询余额\t[输入1]\t")
+    print("存款\t\t[输入2]\t")
+    print("取款\t\t[输入3]\t")
+    print("退出\t\t[输入4]\t")
+while num:       
+    word();
+    func(int(input("请输入您的选择："))) 
+"""
+agelist=[21,25,21,23,22,20]
+agelist.append(31)
+print(f"追加年龄后的列表{agelist}")
+list=[29,33,30]
+agelist.extend(list)
+print(f"追加新列表后的列表{agelist}")
+letter =agelist.pop(0)
+print(f"取出第一个元素后的列表：{agelist}，取出的元素是{letter}")
+last =agelist.pop(-1)
+print(f"取出最后一个元素后的列表：{agelist}。取出的元素是{last}")
+location=agelist.index(31)
+print(f"这是元素31的下标是{location}")
