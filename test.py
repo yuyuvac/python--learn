@@ -180,6 +180,7 @@ while num:
     word();
     func(int(input("请输入您的选择："))) 
 """
+"""
 agelist=[21,25,21,23,22,20]
 agelist.append(31)
 print(f"追加年龄后的列表{agelist}")
@@ -192,3 +193,52 @@ last =agelist.pop(-1)
 print(f"取出最后一个元素后的列表：{agelist}。取出的元素是{last}")
 location=agelist.index(31)
 print(f"这是元素31的下标是{location}")
+"""
+"""
+list = [1,2,3,4,5,6,7,8,9,10]
+list2 = [1,2,3,4,5,6,7,8,9,10]
+list3 =[]
+index = 0
+index2= 0
+while index<len(list) :
+    if list[index]%2==0:
+        continue
+    else :
+        list.pop(index)
+    index=index+1
+print(f"只有偶数的列表是：{list}")
+for element in list2:
+    if element%2 == 0:
+        list3.append(element)
+print(f"只有偶数的列表是：{list3}")
+"""
+"""
+yuanzu=("周杰轮",11,["footall","music"])
+a=yuanzu.index(11)
+print(f"学生年龄所在的下标位置是：{a}")
+print(f"学生的名字是：{yuanzu[0]}")
+del yuanzu[2][0]
+print(f"删除football后的元祖:{yuanzu}")
+yuanzu[2].append("coding")
+print(f"增加元素后的元祖：{yuanzu}")
+"""
+"""
+strlist="itheima itcast boxuegu"
+count=strlist.count("it")
+print(f"字符串内有{count}个it字符")
+newstrlist=strlist.replace("itheima itcast boxuegu","itheima丨itcast丨boxuegu")
+print(f"将空格改为丨的新字符串：{newstrlist}")
+list=newstrlist.split("丨")
+print(f"用丨分隔后的字符串得到的列表：{list}")
+"""
+str="万过薪月.员序程马黑来,nohtyp学"
+list=[]
+i=-10
+count=0
+while count<5:
+    list.append(str[i])
+    i=i-1
+    count=count+1
+print(f"列表list：{list}")
+str2=str[9:4:-1]
+print(f"str2:{str2}")
