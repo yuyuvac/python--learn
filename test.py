@@ -231,6 +231,7 @@ print(f"将空格改为丨的新字符串：{newstrlist}")
 list=newstrlist.split("丨")
 print(f"用丨分隔后的字符串得到的列表：{list}")
 """
+"""
 str="万过薪月.员序程马黑来,nohtyp学"
 list=[]
 i=-10
@@ -242,3 +243,45 @@ while count<5:
 print(f"列表list：{list}")
 str2=str[9:4:-1]
 print(f"str2:{str2}")
+"""
+"""
+mylist=['黑马程序员','传智播客','黑马程序员','传智播客','itheima','itcast','itheima','itcast','best']
+myset=set()
+for element in mylist:
+    myset.add(element)
+print(f"得到元素去重后的集合对象：{myset}")   
+"""
+mydict={
+         "王力宏":{
+            "部门":"科技部",
+            "工资":3000,
+            "级别":1
+        },
+        "周杰伦":{
+            "部门":"市场部",
+            "工资":5000,
+            "级别":2
+        },
+        "林俊杰":{
+            "部门":"市场部",
+            "工资":7000,
+            "级别":3
+        },
+        "张学友":{
+            "部门":"科技部",
+            "工资":4000,
+            "级别":1
+        },
+        "刘德华":{
+            "部门":"市场部",
+            "工资":6000,
+            "级别":2
+        }
+}
+print(f"未做任何修改前的字典：{mydict}")
+for element in mydict:
+    if mydict[element]["级别"]==1:
+        mydict[element]["工资"]=mydict[element]["工资"]+1000
+        mydict[element]["级别"]=mydict[element]["级别"]+1
+print(f"修改后的:{mydict}")
+
