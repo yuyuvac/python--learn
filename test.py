@@ -251,6 +251,7 @@ for element in mylist:
     myset.add(element)
 print(f"得到元素去重后的集合对象：{myset}")   
 """
+"""
 mydict={
          "王力宏":{
             "部门":"科技部",
@@ -284,4 +285,26 @@ for element in mydict:
         mydict[element]["工资"]=mydict[element]["工资"]+1000
         mydict[element]["级别"]=mydict[element]["级别"]+1
 print(f"修改后的:{mydict}")
+"""
+"""
+file = open("D:\OneDrive\Desktop\word.txt","r",encoding="UTF-8")
+print(f"类型是：{type(file)}")
+word = file.read()
+print(f"这是读取全文成为一个字符串：{word}")
+list1=word.split()
+print(f"这是切割后展示的列表：{list1}")
+num=list1.count("itheima")
+print(f"这是itheima出现的次数：{num}")
+file.close()
+"""
+
+file1=open("D:\OneDrive\Desktop\cill.txt","r",encoding="UTF-8")
+file2 = open("D:\OneDrive\Desktop\cill.txt.bak","w",encoding="UTF-8")
+for line in file1:
+    if  "测试" in line:
+        continue
+    else:
+        file2.write(line)
+file1.close()
+file2.close()
 
