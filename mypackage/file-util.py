@@ -1,6 +1,3 @@
-from os import name
-
-
 def fileinfo(file_name):
     file1=None
     try:
@@ -16,5 +13,6 @@ if __name__ == "__main__":
 def appendfile(file_name,data):
     file2=open(file_name,"a",encoding="UTF-8")
     file2.write(data)
+    file2.close()
 if __name__ == "__main__":
     appendfile("D:/OneDrive/Desktop/cill.txt","\n早上好我爱你")
